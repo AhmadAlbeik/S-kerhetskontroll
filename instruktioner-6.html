@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Säkerhetskontroll - Instruktion 6</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            width: 100%;
+        }
+
+        .instruction-image {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #FF69B4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        .back-button:hover {
+            background-color: #FF69B4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Säkerhetskontroll</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="upphovsratt.html">Upphovsrätt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="instruction-content">
+            <h2>Instruktioner</h2>
+            <h3>Vindrutetorkare & bromsar</h3>
+            
+            <div class="video-container">
+                <video controls width="560" height="315">
+                    <source src="images/Broms.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="video-container">
+                <div class="image-grid">
+                    <img src="images/x1.jpg" alt="Bromsar & torkare bild 1" class="instruction-image">
+                    <img src="images/x2.jpg" alt="Bromsar & torkare bild 2" class="instruction-image">
+                    <img src="images/x3.jpg" alt="Bromsar & torkare bild 3" class="instruction-image">
+                    <img src="images/x4.jpg" alt="Bromsar & torkare bild 4" class="instruction-image">
+                </div>
+            </div>
+
+            <ol>
+                <li>Kolla om vindrutetorkaren fungerar på framrutan och bakrutan</li>
+                <li>Kolla om spolervätskan fungerar</li>
+                <li>Kolla om bromsar fungerar</li>
+                <li>Stäng av motorn</li>
+                <li>Trampa på bromsen tills den blir hård och håll foten på den</li>
+                <li>Starta motorn igen medans du håller på bromsen. om bromspedalen inte fungerar så är det en kraschsjunker efter att motorn är igång så är den godkänt.</li>
+                <li>Testa att bromsar fungerar genom att köra sakta sedan bromnyta.</li>
+                <li>repetera processen med handbremsen.</li>
+            </ol>
+            <div class="back-button-container">
+                <a href="instruktioner.html" class="back-button">Backa</a>
+            </div>
+        </section>
+    </main>
+            
+
+    <footer>
+        <p>&copy; 2025 Säkerhetskontroll. Alla rättigheter reserverade.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Säkerhetskontroll - Instruktion 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            width: 100%;
+        }
+
+        .instruction-image {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #FF69B4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        .back-button:hover {
+            background-color: #FF69B4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Säkerhetskontroll</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="upphovsratt.html">Upphovsrätt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="instruction-content">
+            <h2>Instruktioner</h2>
+            <h3>Kontrollera vätske nivån</h3>
+            
+            <div class="video-container">
+                <video controls width="560" height="315">
+                    <source src="images/Kyl-och-spolarvatska.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="video-container">
+                <div class="image-grid">
+                    <img src="images/v1.jpg" alt="Vätskekontroll bild 1" class="instruction-image">
+                </div>
+            </div>
+            <p>Motorhuven är fram på bilen där du kan kontrollera och fylla på vätskor som behövs för att köra bilen på ett säkert sätt. Det handlar om kylarvätska, spolarvätska, motorolja och bromsvätska. Om någon av vätskorna behöver fyllas på kan du köpa det på bland annat bensinstationer eller butiker som säljer biltillbehör.</p>
+
+            <ol>
+                <li>Börja med att öppna motorhuven. Det gör du oftast inifrån bilen genom att dra i en spak, snett ner till vänster från ratten eller trycka på en knapp. </li>
+                <li>Gå sen ur bilen och öppna huven. Ibland kan det finnas en spärr som du behöver haka ur för att få upp luckan</li>
+                <li>Kylarvätskan hjälper till att hålla bilen i rätt temperatur. Och vätskan brukar ha färgen rosa.</li>
+                <li>Öppna inte den behållare när bilen är varm. Då finns det en risk att du får kokande vatten på dig.</li>
+                <li>Om du behöver öppna den måste du låta bilen kylas ner innan du försiktigt öppnar den.</li>
+                <li>Bilen signalerar ofta när du behöver fylla på kylarvätskan.</li>
+                <li>Så det viktigaste är att du vet var man fyller på den.</li>
+                <li>Spolarvätska är det som hjälper oss att hålla vindrutan ren. Behållaren har ofta ett blått lock.</li>
+                <li>Ibland ser man nivån på instrumentpanelen i bilen. Om du har en äldre modell är behållaren genomskinlig så att du ser vätskenivån.</li>
+            </ol>
+        <div class="back-button-container">
+            <a href="instruktioner.html" class="back-button">Backa</a>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

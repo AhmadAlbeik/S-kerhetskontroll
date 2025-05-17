@@ -1,0 +1,336 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #FFB6C1;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #FFB6C1;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #FF69B4;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.hero {
+    background: url('a76317e8765315ed50708b3d07fdd0a4.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 4rem 20px 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+    min-height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.button-container {
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    padding: 2rem 0;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+}
+
+.hero h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.instruktioner-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #FFB6C1;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 3;
+    text-align: left;
+}
+
+.instruktioner-button:hover {
+    background-color: #FF69B4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Video container */
+.video-container {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.instruction-buttons {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.button-grid {
+    display: grid;
+    gap: 2rem;
+    padding: 3rem;
+    background-color: rgba(255, 182, 193, 0.1);
+    border-radius: 12px;
+    margin-top: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instruction-button {
+    display: block;
+    background-color: rgba(255, 182, 193, 0.2);
+    color: #333;
+    text-decoration: none;
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 182, 193, 0.3);
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.instruction-button:hover {
+    background-color: rgba(255, 182, 193, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.2);
+    border-color: rgba(255, 182, 193, 0.5);
+}
+
+.video-container {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 360px;
+    border: none;
+    border-radius: 4px;
+}
+
+.instruction-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.instruction-content h2 {
+    color: #FFB6C1;
+    margin-bottom: 1rem;
+}
+
+.instruction-content h3 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.instruction-content ol {
+    list-style-position: inside;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.instruction-content li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 182, 193, 0.1);
+    border-radius: 4px;
+}
+
+/* Form styles */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+form label h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #FFB6C1;
+    padding-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #4CAF50;
+    color: white;
+}
+
+form button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #FFB6C1;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}

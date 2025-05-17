@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Säkerhetskontroll - Kontakt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Säkerhetskontroll</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="instruktioner.html">Instruktioner</a></li>
+                <li><a href="upphovsratt.html">Upphovsrätt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Kontaktformulär</h2>
+        <form action="submit_form.php" method="POST">
+            <div>
+                <label for="namn">Namn:</label>
+                <input type="text" id="namn" name="namn" required>
+            </div>
+
+            <div>
+                <label for="adress">Adress:</label>
+                <input type="text" id="adress" name="adress" required>
+            </div>
+
+            <div>
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+            </div>
+
+            <div>
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="kommentar">Kommentar:</label>
+                <textarea id="kommentar" name="kommentar" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Skicka</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Ansvarig utgivare: Ahmad Albeik</p>
+        <p>Senaste uppdatering: 2025-05-13</p>
+        <p>Kontakt: ahmad.majd.albeik@gmail.com</p>
+    </footer>
+</body>
+</html>

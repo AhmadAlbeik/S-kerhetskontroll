@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Säkerhetskontroll - Instruktion 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            width: 100%;
+        }
+
+        .instruction-image {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #FFB6C1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        .back-button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Säkerhetskontroll</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="upphovsratt.html">Upphovsrätt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="instruction-content">
+            <h2>Instruktioner</h2>
+            <h3>Kontrollera däck</h3>
+            
+            <div class="video-container">
+                <video controls width="560" height="315">
+                    <source src="images/Däck.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="video-container">
+                <div class="image-grid">
+                    <img src="images/bild0.jpg" alt="Däckkontroll bild 1" class="instruction-image">
+                    <img src="images/bild1.jpg" alt="Däckkontroll bild 2" class="instruction-image">
+                    <img src="images/bild2.jpg" alt="Däckkontroll bild 3" class="instruction-image">
+                </div>
+            </div>
+            <p>Däck. När du kontrollerar däcken så är det två saker som du ska vara uppmärksam på. Mönsterdjup och lufttryck. Om inget annat anges så ska du kontrollera alla fyra däck. Mönsterdjup. Känn på däcken och i spåren. På vinterdäck ska spåren vara minst 3 mm djupa och på sommardäck minst 1,6 mm. På däcken finns ofta en klack, kallad slitagevarnare, som är 3 mm respektive 1,6 mm, som du kan leta efter och ha som riktmärke. Så länge däcken inte är slitna ner till slitagevarnaren så är mönsterdjupet godkänt. Lufttryck Lufttryck kontrollerar du enklast genom att se på bilen från sidan för att kolla att däcken ser jämna ut. Är det väldigt ojämnt så är lufttrycket antagligen dåligt. Tänk på att främre däcket ofta är lite mer nedsjunket än bakdäcket och det beror på att motorn sitter fram och lägger mer tyngd på däcket.</p>
+            
+            <ol>
+                <li>Kontrollera mönsterdjupet på däcken</li>
+                <li>Vid sommarväglag ska däck ha minst 1,6 millimeters mönsterdjup</li>
+                <li>Vid vinterväglag ska däck ha minst 3,0 millimeters mönsterdjup</li>
+                <li>Kontrollera att däcken är i bra skick</li>
+                <li>Kontrollera där med lufttrycket på däcken</li>
+                <li>Se till att däcken är jämna</li>
+                <li>Du kan åka till närmaste bensinstation för att se om alla däck har samma lufttryck</li>
+            </ol>
+        <div class="back-button-container">
+            <a href="instruktioner.html" class="back-button">Backa</a>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Säkerhetskontroll. Alla rättigheter reserverade.</p>
+    </footer>
+</body>
+</html>
